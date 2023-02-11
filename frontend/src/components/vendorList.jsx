@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import VendorForm from './vendorForm';
 import Vendor from './vendor';
-
+import NavBar from '../reusable/navbar'
 
 function VendorList() {
   const [todos, setTodos] = useState([]);
@@ -43,6 +43,7 @@ function VendorList() {
 
   return (
     <>
+    <NavBar/>
       <h1 className='text-center'>Vendor CRUD Operations</h1>
       <VendorForm onSubmit={addTodo} />
       <Vendor

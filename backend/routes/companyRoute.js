@@ -40,6 +40,7 @@ const router = express.Router()
 // })
 
 router.post('/',  companyController.add_company)
+router.get('/', companyController.get_all_company)
 
 // companyDetails.save(function(err, req){
 //     if(err) the
